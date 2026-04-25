@@ -278,7 +278,6 @@
   margin-top: 180px;
   padding: 0 50px;
   color: #000;
-  color: #000;
   font-weight: 400;
   font-size: 18px;
 }
@@ -305,10 +304,6 @@
 
 .footer__menu-link_active {
   text-decoration: none;
-}
-
-.header__address {
-  list-style: none;
 }
 
 .footer__social-list {
