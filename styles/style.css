@@ -19,7 +19,8 @@
   list-style: none;
 }
 
-.header__link {
+.addres__link {
+  display: block;
   text-decoration: underline;
   text-underline-position: under;
   white-space: nowrap;
@@ -39,10 +40,6 @@
   width: 240px;
   font-style: normal;
   line-height: 135%;
-}
-
-.header__address {
-  list-style: none;
 }
 
 .cover {
@@ -70,13 +67,7 @@
 .aligned-text {
   z-index: 2;
   display: block;
-}
-
-/*Убираю мешающий отступ после последней буквы*/
-
-.aligned-text::after {
-  content: "";
-  margin-left: -0.3em;
+  margin-right: -0.3em;
 }
 
 .text-center {
@@ -128,6 +119,7 @@
 
 .lots {
   margin: 180px 24px 0;
+  scroll-margin-top: 50px;
 }
 
 .lots__heading {
@@ -165,24 +157,20 @@
   align-items: center;
   height: 100%;
   padding: 48px 40px;
+  background-position: center;
+  background-size: cover;
 }
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card__title {
@@ -266,6 +254,7 @@
 }
 
 .text_in_about {
+  width: 688px;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -276,7 +265,7 @@
   grid-template-columns: 1fr min-content 1fr;
   gap: 20px;
   margin-top: 180px;
-  padding: 0 50px;
+  padding: 0 50px 82px;
   color: #000;
   font-weight: 400;
   font-size: 18px;
